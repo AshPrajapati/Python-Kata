@@ -16,3 +16,9 @@ def test_year_is_divisible_by_4_is_leap_year():
 
 def test_year_is_divisible_by_400_is_leap_year():
     assert is_leap_year(400) == True
+
+
+def test_year_is_not_divisible_by_100_but_divisible_by_400_is_leap_year():
+    assert is_leap_year(100) == False
+    assert is_leap_year(2200) == False
+    assert is_leap_year(2400) == True
